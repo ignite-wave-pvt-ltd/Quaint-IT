@@ -54,7 +54,7 @@ const Hero = () => {
         >
           <div className="relative z-10 p-8 rounded-3xl glass shadow-2xl overflow-hidden group">
             <img
-                src= "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773128471/fabian-irsara-67l-QujB14w-unsplash_dsthgu.jpg"
+                src= "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773130041/IMG_20260310_133522_umm0el.png"
               alt="Quaint IT"
               className="w-full h-auto rounded-xl shadow-lg transition-transform duration-500 group-hover:scale-105"
             />
