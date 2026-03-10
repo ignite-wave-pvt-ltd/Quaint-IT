@@ -416,40 +416,46 @@ const Contact = () => {
         </motion.div>
 
         {/* Contact Info Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
-        >
-          {contactInfo.map((item, index) => (
-            <motion.a
-              key={item.title}
-              href={item.link}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group relative"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
-              <div className="relative p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all">
-                <div className="w-10 h-10 mb-3 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-                  {item.icon}
-                </div>
-                <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-base font-bold text-primary dark:text-white mb-1">
-                  {item.value}
-                </p>
-                <p className="text-xs text-slate-500 dark:text-slate-500">
-                  {item.description}
-                </p>
-              </div>
-            </motion.a>
-          ))}
-        </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+>
+  {contactInfo.map((item, index) => (
+    <motion.a
+      key={item.title}
+      href={item.link}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.1 }}
+      className="group relative h-full"
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
+
+      <div className="relative p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all h-full flex flex-col">
+        
+        <div className="w-10 h-10 mb-3 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+          {item.icon}
+        </div>
+
+        <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-1">
+          {item.title}
+        </h3>
+
+        <p className="text-base font-bold text-primary dark:text-white mb-1">
+          {item.value}
+        </p>
+
+        <p className="text-xs text-slate-500 dark:text-slate-500 mt-auto">
+          {item.description}
+        </p>
+
+      </div>
+    </motion.a>
+  ))}
+</motion.div>
 
         {/* Main Contact Grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
