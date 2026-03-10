@@ -142,7 +142,6 @@ const BusinessAdvisory = () => {
             confidence.
           </p>
         </motion.div>
-
         {/* Main Services */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {advisoryServices.map((service, index) => (
@@ -186,7 +185,6 @@ const BusinessAdvisory = () => {
             </motion.div>
           ))}
         </div>
-
         {/* Expertise Areas */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -220,38 +218,6 @@ const BusinessAdvisory = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Success Stories */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-20 p-8 rounded-3xl glass border border-slate-200 dark:border-slate-800"
-        >
-          <h3 className="text-2xl font-display font-bold text-primary dark:text-white mb-8 text-center">
-            Client Success Stories
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-2xl bg-white dark:bg-slate-900"
-              >
-                <Briefcase className="text-primary mb-3" size={24} />
-                <h4 className="font-bold text-primary dark:text-white mb-1">
-                  {story.company}
-                </h4>
-                <p className="text-accent font-medium text-sm mb-2">
-                  {story.result}
-                </p>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {story.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

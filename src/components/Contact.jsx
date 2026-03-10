@@ -419,7 +419,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
         >
           {contactInfo.map((item, index) => (
             <motion.a
@@ -490,7 +490,7 @@ const Contact = () => {
                   onSubmit={handleSubmit}
                   className="space-y-6"
                 >
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-slate-500 flex items-center gap-1">
                         <User size={14} /> First Name *
@@ -521,7 +521,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-slate-500 flex items-center gap-1">
                         <Mail size={14} /> Email *
@@ -551,7 +551,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-slate-500 flex items-center gap-1">
                         <Globe size={14} /> Company

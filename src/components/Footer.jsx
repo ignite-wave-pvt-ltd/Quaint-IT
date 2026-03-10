@@ -190,9 +190,6 @@ const Footer = () => {
             {/* Trust Badges */}
             <div className="mt-6 flex flex-wrap gap-3">
               <span className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs text-slate-600 dark:text-slate-400">
-                ISO 9001:2024
-              </span>
-              <span className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs text-slate-600 dark:text-slate-400">
                 GDPR Compliant
               </span>
               <span className="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs text-slate-600 dark:text-slate-400">

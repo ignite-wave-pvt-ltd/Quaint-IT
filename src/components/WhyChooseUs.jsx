@@ -51,10 +51,6 @@ const WhyChooseUs = () => {
 
   const advantages = [
     {
-      icon: <Award className="text-accent" size={20} />,
-      text: "ISO 9001:2024 Certified",
-    },
-    {
       icon: <Clock className="text-accent" size={20} />,
       text: "15+ Years Industry Experience",
     },
@@ -72,7 +68,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Zap className="text-accent" size={20} />,
-      text: "Average 3-day Response Time",
+      text: "Average 1-day Response Time",
     },
   ];
 
@@ -337,10 +333,7 @@ const WhyChooseUs = () => {
             <ShieldCheck size={20} />
             <span className="text-sm">GDPR Compliant</span>
           </div>
-          <div className="flex items-center gap-2 text-slate-500/60 dark:text-white/60">
-            <BarChart3 size={20} />
-            <span className="text-sm">ISO 27001 Certified</span>
-          </div>
+
           <div className="flex items-center gap-2 text-slate-500/60 dark:text-white/60">
             <Users size={20} />
             <span className="text-sm">500+ Trusted Partners</span>
