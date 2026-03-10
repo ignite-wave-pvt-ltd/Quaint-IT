@@ -15,23 +15,38 @@ const Clients = () => {
     {
       id: 1,
       name: "Company 1",
-      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c1_dvdbhv.jpg",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c3_whdrwl.jpg",
     },
     {
       id: 2,
       name: "Company 2",
-      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c7_mr74bi.jpg",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c4_lhshdj.jpg",
     },
     {
       id: 3,
       name: "Company 3",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c5_h8k8a5.jpg",
+    },
+    {
+      id: 4,
+      name: "Company 4",
       img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c2_tak4z4.jpg",
     },
-    ,
-    { id: 4, name: "Company 4", img: c4 },
-    { id: 5, name: "Company 5", img: c5 },
-    { id: 6, name: "Company 6", img: c6 },
-    { id: 7, name: "Company 7", img: c7 },
+    {
+      id: 5,
+      name: "Company 5",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c6_u3wrzd.jpg",
+    },
+    {
+      id: 6,
+      name: "Company 6",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c7_mr74bi.jpg",
+    },
+    {
+      id: 7,
+      name: "Company 7",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c1_dvdbhv.jpg",
+    },
   ];
 
   // Duplicate the array for seamless infinite scroll
