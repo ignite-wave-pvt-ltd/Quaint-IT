@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import c1 from "../../public/clients/c1.jpeg";
-import c2 from "../../public/clients/c2.jpeg";
-import c3 from "../../public/clients/c3.jpeg";
-import c4 from "../../public/clients/c4.jpeg";
-import c5 from "../../public/clients/c5.jpeg";
-import c6 from "../../public/clients/c6.jpeg";
-import c7 from "../../public/clients/c7.jpeg";
+const c1 = "/clients/c1.jpeg";
+const c2 = "/clients/c2.jpeg";
+const c3 = "/clients/c3.jpeg";
+const c4 = "/clients/c4.jpeg";
+const c5 = "/clients/c5.jpeg";
+const c6 = "/clients/c6.jpeg";
+const c7 = "/clients/c7.jpeg";
 
 const Clients = () => {
   // Duplicate logos array to create seamless infinite scroll
