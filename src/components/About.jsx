@@ -76,7 +76,6 @@ const About = () => {
   ];
 
   const achievements = [
-    "ISO 9001:2024 Certified",
     "Best Corporate Advisory Firm 2023",
     "Trusted by Fortune 500 Companies",
     "Global Network in 30+ Countries",
