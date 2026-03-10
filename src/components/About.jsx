@@ -182,7 +182,7 @@ const About = () => {
             </div>
 
             {/* Key Differentiators */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="text-xl font-display font-bold text-primary dark:text-white">
                 Why Choose Us
               </h4>
@@ -206,7 +206,7 @@ const About = () => {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Right Column - Vision & Mission Cards */}
