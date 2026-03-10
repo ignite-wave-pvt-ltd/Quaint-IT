@@ -27,7 +27,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         { name: "HR & Payroll", to: "/services/hr-payroll" },
       ],
     },
-    { name: "Why Choose Us", to: "/why-choose-us" },
     { name: "Industries", to: "/industries" },
     { name: "Contact", to: "/contact" },
   ];

@@ -22,7 +22,6 @@ const Footer = () => {
   const quickLinks = [
     { name: "Home", to: "/" },
     { name: "About Us", to: "/about" },
-    { name: "Why Choose Us", to: "/why-choose-us" },
     { name: "Industries", to: "/industries" },
     { name: "Contact", to: "/contact" },
   ];

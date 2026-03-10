@@ -17,8 +17,8 @@ import {
 
 const About = () => {
   const stats = [
-    { value: "15+", label: "Years Experience", icon: Clock },
-    { value: "500+", label: "Happy Clients", icon: Users },
+    { value: "6+", label: "Years Experience", icon: Clock },
+    { value: "100+", label: "Happy Clients", icon: Users },
     { value: "98%", label: "Client Retention", icon: TrendingUp },
     { value: "24/7", label: "Support Available", icon: Globe },
   ];
@@ -71,7 +71,7 @@ const About = () => {
       name: "Name Here",
       role: "Financial Consulting Director",
       image: "/team/emily.jpg",
-      expertise: "CFA, 15+ years in finance",
+      expertise: "CFA, 6+ years in finance",
     },
   ];
 
@@ -108,7 +108,7 @@ const About = () => {
             </span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            With over a decade of experience, we've helped hundreds of
+            With over a 6+ years of experience, we've helped hundreds of
             businesses navigate complex regulatory landscapes, optimize
             operations, and achieve sustainable growth through our comprehensive
             corporate services.
@@ -164,7 +164,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-slate-600 dark:text-slate-400">
                 <p>
-                  Founded in 2010, Quaint IT Consulting began with a simple
+                  Founded in 2019, Quaint IT Consulting began with a simple
                   mission: to provide businesses with the expert guidance they
                   need to thrive in an increasingly complex corporate landscape.
                   What started as a small team of dedicated advisors has grown
@@ -313,7 +313,7 @@ const About = () => {
         </motion.div>
 
         {/* Leadership Team Preview */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -340,7 +340,6 @@ const About = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
                 <div className="relative p-6 rounded-2xl glass border border-slate-200 dark:border-slate-800 text-center">
-                  {/* Placeholder for team member image - you can replace with actual images */}
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center">
                     <Users className="w-12 h-12 text-white" />
                   </div>
@@ -368,7 +367,7 @@ const About = () => {
               />
             </a>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* CTA Section */}
         <motion.div

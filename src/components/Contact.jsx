@@ -416,46 +416,44 @@ const Contact = () => {
         </motion.div>
 
         {/* Contact Info Cards */}
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
->
-  {contactInfo.map((item, index) => (
-    <motion.a
-      key={item.title}
-      href={item.link}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      className="group relative h-full"
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+        >
+          {contactInfo.map((item, index) => (
+            <motion.a
+              key={item.title}
+              href={item.link}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group relative h-full"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
 
-      <div className="relative p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all h-full flex flex-col">
-        
-        <div className="w-10 h-10 mb-3 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-          {item.icon}
-        </div>
+              <div className="relative p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all h-full flex flex-col">
+                <div className="w-10 h-10 mb-3 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+                  {item.icon}
+                </div>
 
-        <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-1">
-          {item.title}
-        </h3>
+                <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-1">
+                  {item.title}
+                </h3>
 
-        <p className="text-base font-bold text-primary dark:text-white mb-1">
-          {item.value}
-        </p>
+                <p className="text-base font-bold text-primary dark:text-white mb-1">
+                  {item.value}
+                </p>
 
-        <p className="text-xs text-slate-500 dark:text-slate-500 mt-auto">
-          {item.description}
-        </p>
-
-      </div>
-    </motion.a>
-  ))}
-</motion.div>
+                <p className="text-xs text-slate-500 dark:text-slate-500 mt-auto">
+                  {item.description}
+                </p>
+              </div>
+            </motion.a>
+          ))}
+        </motion.div>
 
         {/* Main Contact Grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
@@ -750,17 +748,21 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Map Preview */}
-            <div className="p-4 rounded-3xl glass border border-slate-200 dark:border-slate-800">
-              <div className="aspect-video rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                <MapPin size={32} className="text-accent" />
-                <span className="ml-2 text-primary dark:text-white font-medium">
-                  Hyderabad, India
-                </span>
-              </div>
-            </div>
           </motion.div>
+        </div>
+
+        {/* Map Preview */}
+        <div className="p-4 rounded-3xl glass border border-slate-200 dark:border-slate-800 overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8248230578583!2d78.49889427516767!3d17.505319883402116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b5c65465aa5%3A0x80ec09e4fd7a121d!2sQuaint%20IT%20Consulting%20(OPC)%20Private%20Limited!5e1!3m2!1sen!2sin!4v1773152821747!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-xl"
+          ></iframe>
         </div>
 
         {/* Emergency Contact */}
@@ -768,7 +770,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center p-8 rounded-3xl glass border border-slate-200 dark:border-slate-800"
+          className="text-center p-8 rounded-3xl glass border mt-4 border-slate-200 dark:border-slate-800"
         >
           <h3 className="text-xl font-display font-bold text-primary dark:text-white mb-2">
             Need Immediate Assistance?

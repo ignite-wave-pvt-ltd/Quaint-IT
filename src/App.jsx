@@ -80,14 +80,14 @@ function App() {
               </main>
             }
           />
-          <Route
+          {/* <Route
             path="/why-choose-us"
             element={
               <main className="pt-20">
                 <WhyChooseUs />
               </main>
             }
-          />
+          /> */}
           <Route
             path="/industries"
             element={

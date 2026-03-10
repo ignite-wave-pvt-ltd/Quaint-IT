@@ -225,7 +225,7 @@ const CorporateCompliance = () => {
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-primary">
-                    500+
+                    300+
                   </div>
                   <div className="text-sm text-slate-600">Audits Completed</div>
                 </div>
