@@ -260,8 +260,8 @@ const Home = () => {
             {industries.map((item, i) => (
               <motion.span
                 key={i}
-                initial={{ opacity: 0, opacity: 0 }}
-                whileInView={{ opacity: 1, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 className="px-6 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full font-medium text-slate-700 dark:text-slate-300 hover:bg-accent hover:text-white dark:hover:bg-accent transition-all cursor-default"
               >

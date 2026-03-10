@@ -378,7 +378,6 @@ const About = () => {
           className="relative rounded-3xl overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-90" />
-          <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />
 
           <div className="relative p-12 text-center text-white">
             <h3 className="text-3xl md:text-4xl font-display font-bold mb-4">
