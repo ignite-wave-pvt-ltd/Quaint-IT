@@ -21,7 +21,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     { name: "About", to: "/about" },
     {
       name: "Services",
-      to: "/services",
       submenu: [
         { name: "Corporate Compliance", to: "/services/corporate-compliance" },
         { name: "Business Advisory", to: "/services/business-advisory" },
@@ -58,13 +57,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               onMouseEnter={() => link.submenu && setActiveDropdown(link.name)}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <Link
-                to={link.to}
-                className="text-sm font-medium hover:text-accent transition-colors text-slate-700 dark:text-slate-300 flex items-center gap-1"
-              >
-                {link.name}
-                {link.submenu && <ChevronDown size={16} />}
-              </Link>
+              {link.to ? (
+                <Link
+                  to={link.to}
+                  className="text-sm font-medium hover:text-accent transition-colors text-slate-700 dark:text-slate-300 flex items-center gap-1"
+                >
+                  {link.name}
+                  {link.submenu && <ChevronDown size={16} />}
+                </Link>
+              ) : (
+                <span className="text-sm font-medium text-slate-700 dark:text-slate-300 flex items-center gap-1 cursor-default">
+                  {link.name}
+                  {link.submenu && <ChevronDown size={16} />}
+                </span>
+              )}
               {link.submenu && activeDropdown === link.name && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -128,13 +134,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className="flex flex-col gap-4 p-6">
               {navLinks.map((link) => (
                 <React.Fragment key={link.name}>
-                  <Link
-                    to={link.to}
-                    onClick={() => setIsOpen(false)}
-                    className="text-lg font-medium hover:text-accent"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.to ? (
+                    <Link
+                      to={link.to}
+                      onClick={() => setIsOpen(false)}
+                      className="text-lg font-medium hover:text-accent"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <span className="text-lg font-medium text-slate-700 dark:text-slate-300">
+                      {link.name}
+                    </span>
+                  )}
                   {link.submenu &&
                     link.submenu.map((sub) => (
                       <Link
