@@ -293,8 +293,8 @@ const Contact = () => {
     {
       icon: <Mail size={20} />,
       title: "Email",
-      value: "info@quaintit.com",
-      link: "mailto:info@quaintit.com",
+      value: "info@quaintcon.com",
+      link: "mailto:info@quaintcon.com",
       description: "Drop us a line anytime",
     },
     {

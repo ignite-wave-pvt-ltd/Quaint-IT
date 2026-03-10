@@ -414,24 +414,6 @@ const Industries = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* Industry Partners */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-12 text-center"
-        >
-          <p className="text-sm text-slate-500 dark:text-slate-500 mb-4">
-            Trusted by industry leaders across the globe
-          </p>
-          <div className="flex flex-wrap justify-center gap-8 items-center opacity-50">
-            <Globe2 size={32} className="text-slate-400" />
-            <Building2 size={32} className="text-slate-400" />
-            <Factory size={32} className="text-slate-400" />
-            <Landmark size={32} className="text-slate-400" />
-          </div>
-        </motion.div>
       </div>
     </section>
   );

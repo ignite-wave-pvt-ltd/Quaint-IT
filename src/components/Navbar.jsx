@@ -37,14 +37,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "glass py-3" : "bg-transparent py-5"}`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-">
           <img
-            src="/logo.jpg"
-            alt="Quaint IT"
-            className="h-10 w-auto rounded"
+            src="/logo2.png"
+            alt="Quaint IT Consulting"
+            className="h-14 w-auto rounded"
           />
           <span className="text-xl font-display font-bold text-primary dark:text-white">
-            Quaint IT
+            Quaint IT Consulting
           </span>
         </Link>
 

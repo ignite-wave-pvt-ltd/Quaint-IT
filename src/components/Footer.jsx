@@ -35,7 +35,11 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: Phone, text: "+91 8247508468", href: "tel:+918247508468" },
-    { icon: Mail, text: "info@quaintit.com", href: "mailto:info@quaintit.com" },
+    {
+      icon: Mail,
+      text: "info@quaintcon.com",
+      href: "mailto:info@quaintcon.com",
+    },
     {
       icon: MapPin,
       text: "Hyderabad, Telangana, India",
@@ -62,14 +66,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Company Info - Large Column */}
           <div className="lg:col-span-4 space-y-6">
-            <Link to="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-">
               <img
-                src="/logo.jpg"
-                alt="Quaint IT"
-                className="h-12 w-auto rounded-lg"
+                src="/logo2.png"
+                alt="Quaint IT Consulting"
+                className="h-14 w-auto rounded"
               />
-              <span className="text-2xl font-display font-bold text-primary dark:text-white">
-                Quaint IT
+              <span className="text-xl font-display font-bold text-primary dark:text-white">
+                Quaint IT Consulting
               </span>
             </Link>
 
