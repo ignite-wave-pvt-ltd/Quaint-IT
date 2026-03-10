@@ -12,9 +12,22 @@ const c7 = "/clients/c7.jpeg";
 const Clients = () => {
   // Duplicate logos array to create seamless infinite scroll
   const logos = [
-    { id: 1, name: "Company 1", img: c1 },
-    { id: 2, name: "Company 2", img: c2 },
-    { id: 3, name: "Company 3", img: c3 },
+    {
+      id: 1,
+      name: "Company 1",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c1_dvdbhv.jpg",
+    },
+    {
+      id: 2,
+      name: "Company 2",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c7_mr74bi.jpg",
+    },
+    {
+      id: 3,
+      name: "Company 3",
+      img: "https://res.cloudinary.com/dzrc9ejln/image/upload/v1773125875/c2_tak4z4.jpg",
+    },
+    ,
     { id: 4, name: "Company 4", img: c4 },
     { id: 5, name: "Company 5", img: c5 },
     { id: 6, name: "Company 6", img: c6 },
