@@ -39,7 +39,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-">
           <img
-            src="/logo2.png"
+            src="/logo2.jpg"
             alt="Quaint IT Consulting"
             className="h-14 w-auto rounded"
           />
