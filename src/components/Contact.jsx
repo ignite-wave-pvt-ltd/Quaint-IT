@@ -216,7 +216,7 @@ import {
   Calendar,
   Globe,
   Linkedin,
-  Twitter,
+  X,
   Facebook,
   Instagram,
   ArrowRight,
@@ -224,6 +224,7 @@ import {
   Shield,
 } from "lucide-react";
 import emailjs from "emailjs-com";
+import { TwitterIcon } from "../utils";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -326,10 +327,10 @@ const Contact = () => {
       color: "bg-blue-600",
     },
     {
-      icon: <Twitter size={18} />,
+      icon: <TwitterIcon size={18} />,
       href: "#",
-      label: "Twitter",
-      color: "bg-sky-500",
+      label: "X",
+      color: "bg-black",
     },
     {
       icon: <Facebook size={18} />,

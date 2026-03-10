@@ -7,12 +7,14 @@ import {
   Phone,
   MapPin,
   Linkedin,
-  Twitter,
+  X,
   Facebook,
   Instagram,
   ChevronRight,
   Send,
+  Share2,
 } from "lucide-react";
+import { TwitterIcon } from "../utils";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -43,7 +45,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: TwitterIcon, href: "#", label: "X" },
     { icon: Facebook, href: "#", label: "Facebook" },
     { icon: Instagram, href: "#", label: "Instagram" },
   ];
