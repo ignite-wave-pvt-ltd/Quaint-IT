@@ -68,7 +68,7 @@ const Footer = () => {
           <div className="lg:col-span-4 space-y-6">
             <Link to="/" className="flex items-center gap-">
               <img
-                src="/logo2.jpg"
+                src="https://res.cloudinary.com/dzrc9ejln/image/upload/v1773122365/q-l_dl7rsv.png"
                 alt="Quaint IT Consulting"
                 className="h-14 w-auto rounded"
               />
